@@ -3,7 +3,7 @@ $nilai = "";
 $grade = "";
 
 if (isset($_POST['nilai'])) {
-    $nilai = (int) $_POST['nilai']; // pastikan jadi angka
+    $nilai = (int) $_POST['nilai'];
 
     if ($nilai >= 85) {
         $grade = "A";
@@ -39,3 +39,4 @@ if (isset($_POST['nilai'])) {
     <?php endif; ?>
 </body>
 </html>
+
