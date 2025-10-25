@@ -1,0 +1,14 @@
+<!-- Ubah processData.php agar menampilkan detail pesan error. -->
+<?php
+require 'A4-validate.inc';
+$errors = array();
+validateName($errors, $_POST, 'surname');
+
+if ($errors) {
+    echo 'Errors:<br/>';
+    foreach ($errors as $field => $error)
+        echo "$field : $error<br/>";
+} else {
+    echo 'Data OK!';
+}
+?>
